@@ -20,6 +20,7 @@ var _addLabelToFailedImage = true;
 var _test_match;
 var _test_exclude;
 
+exports.resetCount = resetCount;
 exports.screenshot = screenshot;
 exports.compareAll = compareAll;
 exports.compareMatched = compareMatched;
@@ -27,6 +28,10 @@ exports.init = init;
 exports.update = init;
 exports.turnOffAnimations = turnOffAnimations;
 exports.getExitStatus = getExitStatus;
+
+function resetCount(num) {
+    _count = typeof num === "undefined" ? 0 : num;    
+}
 
 function init(options){
 	casper = options.casper || casper;
