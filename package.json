@@ -2,7 +2,7 @@
   "name": "PhantomCSS",
   "version": "0.0.1",
   "author": "Matt Donofrio",
-  "description": "Some common test structures",
+  "description": "A CSS Regression tool",
   "repository" : {
     "type" : "git",
     "url" : "https://github.com/frio80/PhantomCSS"
